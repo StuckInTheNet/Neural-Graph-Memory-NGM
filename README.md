@@ -1,19 +1,19 @@
 # Neural Graph Memory
 
-_What if your AI could remember the world more like you do?_
+Can an AI remember the world like we do?
 
-This project is an experiment in building **human-like memory** for AI systems—drawing inspiration from the brain’s ability to store experiences through context, senses, and associations. Instead of stuffing everything into a linear context window, we use a **graph-based memory** model powered by bio-mimicry.
+This repo is an early stage experiment in building a more 'human like' memory system for AI, one that isn’t just a giant token buffer. Instead of stuffing everything into a fixed length context window, we store memory as a graph: events become nodes, relationships form edges, and recall happens through semantic and contextual similarity. It's built around the idea of biomimicry, borrowing inspiration from how the brain handles memory episodic, sensory, and associative.
 
-It’s not science fiction. It’s a practical prototype that uses modern embeddings and a custom memory graph to recall smells, sights, and sounds—from birds chirping in the backyard to the aroma of morning coffee in the kitchen.
+This is a working prototype. It encodes multimodal experiences (like “coffee smell” in the “morning kitchen scene”), builds a memory graph from them, and uses that graph to answer recall prompts. It’s lightweight, extensible, and designed for experimentation.
 
- What This Is
+## What This Is
 
-- A **graph memory engine** for multi-modal AI recall
-- Inspired by hippocampal indexing, episodic memory, and Hebbian learning
-- Built in Python with NetworkX + SentenceTransformers
-- Includes a demo, benchmark test set, and visualization tool
+- A graph memory engine for multimodal AI recall
+- Inspired by hippocampal indexing, episodic memory, and Hebbian association
+- Built in Python using NetworkX and SentenceTransformers
+- Includes benchmark tasks, ablations, and a graph visualizer
 
-Quickstart
+## Quickstart
 
 ```bash
 git clone https://github.com/mattfisherAI/neural-graph-memory.git
@@ -22,37 +22,31 @@ pip install -r requirements.txt
 python memory_graph.py
 ```
 
-You’ll see something like:
+Example output:
 ```
 Query: 'coffee smell' → Recalled: 'morning kitchen scene'
 Recall Accuracy: 89.4%
 ```
 
----
+## What's Inside
 
-## 🛠️ Repo Contents
+| File              | Purpose                                            |
+|-------------------|----------------------------------------------------|
+| `memory_graph.py` | Build the memory graph, encode sensory events      |
+| `evaluate.py`     | Run benchmarks and ablations                       |
+| `visualize.py`    | Plot the memory graph for inspection               |
+| `test_cases.json` | 500+ query context pairs for recall evaluation     |
+| `requirements.txt`| Dependency list for Python environment setup       |
 
-| File              | Description                                      |
-|-------------------|--------------------------------------------------|
-| `memory_graph.py` | Build the graph, encode events, test recall      |
-| `evaluate.py`     | Run 500 recall benchmarks + ablations           |
-| `visualize.py`    | Plot the memory graph in 2D                     |
-| `test_cases.json` | 500+ multi-modal cue/context pairs               |
-| `requirements.txt`| Install NetworkX, transformers, numpy, etc.     |
+## Why It Matters
 
----
+- Memory isn’t flat. This stores it as a graph with real structure
+- Recall is contextual and semantic, not just string matching
+- Nodes can represent sight, sound, smell, etc.
+- Edges track time, co-occurrence, causality, and more
+- Inspired by actual neuroscience, not just prompt hacks
 
-##  Why It’s Interesting
-
-- Stores memory **as a graph**, not a flat context window
-- Recalls events using **semantic similarity**
-- Adds **temporal and causal edges** between memories
-- Simulates **smell, sound, sight** using embedding proxies
-- Inspired by **neuroscience**, not just NLP
-
----
-
-## What to Expect
+## Benchmarks
 
 | Metric    | Score   |
 |-----------|---------|
@@ -60,35 +54,25 @@ Recall Accuracy: 89.4%
 | Precision | 87.8%   |
 | Recall    | 90.3%   |
 
-The graph structure makes recall **context-sensitive**, **flexible**, and surprisingly robust.
-
----
+Performance is consistent and holds up under ablation.
 
 ## Paper
 
-This repo accompanies the preprint:
+This repo supports the preprint:
 
-> **“Toward Human-Like Memory in AI: A Bio-Inspired Graph Architecture for Multi-Modal Reasoning”**  
-> Matt Fisher, 2024
+**“Toward Human-Like Memory in AI: A Bio Inspired Graph Architecture for MultiModal Reasoning”**  
+Matt Fisher, 2024
 
----
+## Future Work
 
-## Future Plans
-
-- Replace text proxies with real sensors (CLIP, Whisper, IoT)
-- Integrate with LLM agents for memory-augmented conversations
-- Add learning-based edge pruning and long-term storage strategies
-
----
+- Replace text based cues with actual sensory inputs (CLIP, Whisper, IoT)
+- Tie into agent systems for grounded longterm memory
+- Add pruning, decay, and novelty-based updates
 
 ## Contact
-
-Created by [Matt Fisher](https://www.linkedin.com/in/itsmefish/)  
-📍 Kirkland, WA  
+Built by [Matt Fisher](https://www.linkedin.com/in/itsmefish/)  
 📧 Fish@itsmefish.com
-
----
 
 ## License
 
-MIT License. Fork it, remix it, use it in your next memory-enabled agent.
+MIT License. Fork it, remix it, or use it to make your agent a little smarter.
