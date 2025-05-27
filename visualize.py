@@ -1,4 +1,3 @@
-
 import matplotlib.pyplot as plt
 import networkx as nx
 from memory_graph import build_memory_graph
