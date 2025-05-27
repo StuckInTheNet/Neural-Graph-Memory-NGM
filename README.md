@@ -6,6 +6,12 @@ This repo is an early stage experiment in building a more 'human like' memory sy
 
 This is a working prototype. It encodes multimodal experiences (like “coffee smell” in the “morning kitchen scene”), builds a memory graph from them, and uses that graph to answer recall prompts. It’s lightweight, extensible, and designed for experimentation.
 
+---
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/neural-graph-memory/blob/main/notebooks/demo.ipynb)
+
+---
+
 ## What This Is
 
 - A graph memory engine for multimodal AI recall
@@ -16,7 +22,7 @@ This is a working prototype. It encodes multimodal experiences (like “coffee s
 ## Quickstart
 
 ```bash
-git clone https://github.com/mattfisherAI/neural-graph-memory.git
+git clone https://github.com/YOUR_USERNAME/neural-graph-memory.git
 cd neural-graph-memory
 pip install -r requirements.txt
 python memory_graph.py
@@ -36,6 +42,7 @@ Recall Accuracy: 89.4%
 | `evaluate.py`     | Run benchmarks and ablations                       |
 | `visualize.py`    | Plot the memory graph for inspection               |
 | `test_cases.json` | 500+ query context pairs for recall evaluation     |
+| `notebooks/demo.ipynb` | Walkthrough with visual examples              |
 | `requirements.txt`| Dependency list for Python environment setup       |
 
 ## Why It Matters
@@ -60,16 +67,17 @@ Performance is consistent and holds up under ablation.
 
 This repo supports the preprint:
 
-**“Toward Human-Like Memory in AI: A Bio Inspired Graph Architecture for MultiModal Reasoning”**  
+**“Toward Human-Like Memory in AI: A Bio Inspired Graph Architecture for Multimodal Reasoning”**  
 Matt Fisher, 2024
 
 ## Future Work
 
 - Replace text based cues with actual sensory inputs (CLIP, Whisper, IoT)
-- Tie into agent systems for grounded longterm memory
-- Add pruning, decay, and novelty-based updates
+- Tie into agent systems for grounded long term memory
+- Add pruning, decay, and novelty based updates
 
 ## Contact
+
 Built by [Matt Fisher](https://www.linkedin.com/in/itsmefish/)  
 📧 Fish@itsmefish.com
 
