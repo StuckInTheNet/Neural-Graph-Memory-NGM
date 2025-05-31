@@ -1,0 +1,16 @@
+{
+  "id": "test_case_452",
+  "input": "Identify the sound that played before the dog barked.",
+  "expected_node": [
+    "node_0",
+    "node_1"
+  ],
+  "retrieved_nodes": [
+    "node_1",
+    "node_extra_0",
+    "node_0"
+  ],
+  "precision": 0.67,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}

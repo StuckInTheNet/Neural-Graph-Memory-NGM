@@ -1,0 +1,19 @@
+{
+  "id": "test_case_432",
+  "input": "Summarize a conversation between a customer and support about a broken item.",
+  "expected_node": [
+    "node_0",
+    "node_1",
+    "node_2"
+  ],
+  "retrieved_nodes": [
+    "node_0",
+    "node_extra_1",
+    "node_2",
+    "node_1",
+    "node_extra_0"
+  ],
+  "precision": 0.6,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}
