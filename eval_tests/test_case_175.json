@@ -1,0 +1,15 @@
+{
+  "id": "test_case_175",
+  "input": "Find visual memories involving mountain hikes and sunsets.",
+  "expected_node": [
+    "node_0"
+  ],
+  "retrieved_nodes": [
+    "node_extra_1",
+    "node_0",
+    "node_extra_0"
+  ],
+  "precision": 0.33,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}
