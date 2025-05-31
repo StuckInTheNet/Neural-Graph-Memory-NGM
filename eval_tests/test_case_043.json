@@ -1,0 +1,14 @@
+{
+  "id": "test_case_043",
+  "input": "Link events connected to a childhood birthday party.",
+  "expected_node": [
+    "node_0"
+  ],
+  "retrieved_nodes": [
+    "node_extra_0",
+    "node_0"
+  ],
+  "precision": 0.5,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}
