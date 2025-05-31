@@ -1,0 +1,17 @@
+{
+  "id": "test_case_347",
+  "input": "Which memories are triggered by the sound of a train?",
+  "expected_node": [
+    "node_0",
+    "node_1",
+    "node_2"
+  ],
+  "retrieved_nodes": [
+    "node_1",
+    "node_0",
+    "node_2"
+  ],
+  "precision": 1.0,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}

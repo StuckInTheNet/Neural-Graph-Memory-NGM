@@ -1,0 +1,15 @@
+{
+  "id": "test_case_301",
+  "input": "Retrieve moments involving laughter and joy from past social events.",
+  "expected_node": [
+    "node_0",
+    "node_1"
+  ],
+  "retrieved_nodes": [
+    "node_0",
+    "node_1"
+  ],
+  "precision": 1.0,
+  "recall": 1.0,
+  "notes": "Auto-generated test for coverage benchmarking."
+}
