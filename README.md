@@ -83,4 +83,4 @@ Built by [Matt Fisher](https://www.linkedin.com/in/itsmefish/)
 
 ## License
 
-MIT License. Fork it, remix it, or use it to make your agent a little smarter.
+MIT License. Fork it, remix it, or use it to make your system a little smarter.
