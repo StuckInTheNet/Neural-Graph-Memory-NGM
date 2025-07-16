@@ -1,86 +1,100 @@
-# Neural Graph Memory
+# Neural Graph Memory (NGM)
 
-Can an AI remember the world like we do?
-
-This repo is an early stage experiment in building a more 'human like' memory system for AI, one that isn’t just a giant token buffer. Instead of stuffing everything into a fixed length context window, we store memory as a graph: events become nodes, relationships form edges, and recall happens through semantic and contextual similarity. It's built around the idea of biomimicry, borrowing inspiration from how the brain handles memory episodic, sensory, and associative.
-
-This is a working prototype. It encodes multimodal experiences (like “coffee smell” in the “morning kitchen scene”), builds a memory graph from them, and uses that graph to answer recall prompts. It’s lightweight, extensible, and designed for experimentation.
+> A Biologically-Inspired Graph Architecture for Long-Term Multimodal Episodic Memory in AI Systems  
+> Developed by [Matthew Fisher](mailto:matthew_fisher@brown.edu)  
+> 📄 [Read the Paper (arXiv)](https://arxiv.org/abs/XXXX.XXXXX) (coming soon)
 
 ---
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/neural-graph-memory/blob/main/notebooks/demo.ipynb)
+## Overview
+
+**Neural Graph Memory (NGM)** is a structured memory architecture designed to extend long-term memory capabilities in AI agents. Inspired by hippocampal memory formation, NGM represents episodic events as dynamic, modality-aware graphs, enabling efficient retrieval, contextual reasoning, and temporal alignment across multimodal inputs.
+
+NGM supports:
+
+- Structured memory as sparse graphs with semantic nodes and typed edges
+- Multimodal fusion (text, image, video, etc.)
+- Associative and temporal recall via topological traversal
+- Integration with transformer-based agents and LLMs
 
 ---
 
-## What This Is
+## Key Features
 
-- A graph memory engine for multimodal AI recall
-- Inspired by hippocampal indexing, episodic memory, and Hebbian association
-- Built in Python using NetworkX and SentenceTransformers
-- Includes benchmark tasks, ablations, and a graph visualizer
+-  **Graph-based Memory** — Events encoded as graph nodes, linked by semantic, temporal, and contextual relationships.
+-  **Modality-Aware Encoding** — Inputs from multiple modalities (e.g., language, vision) embedded into unified latent space.
+-  **Retrieval by Traversal** — Fast nearest-neighbor + graph walk retrieval mechanisms, mimicking biological episodic recall.
+-  **Benchmarked** — Outperforms baseline memory systems on multimodal and episodic tasks requiring long-range reasoning.
 
-## Quickstart
+---
+
+## 🛠️ Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/neural-graph-memory.git
+git clone https://github.com/StuckInTheNet/neural-graph-memory.git
 cd neural-graph-memory
 pip install -r requirements.txt
-python memory_graph.py
 ```
 
-Example output:
+Python 3.9+ and PyTorch 2.x required.
+
+---
+
+## 🧪 Reproducing Results
+
+All experiments from the paper can be reproduced via:
+
+```bash
+python experiments/run_all.py
 ```
-Query: 'coffee smell' → Recalled: 'morning kitchen scene'
-Recall Accuracy: 89.4%
+
+To run a specific benchmark:
+
+```bash
+python experiments/retrieve_temporal.py --config configs/temporal.yaml
 ```
 
-## What's Inside
+Output logs and visualizations will be saved to `/results`.
 
-| File              | Purpose                                            |
-|-------------------|----------------------------------------------------|
-| `memory_graph.py` | Build the memory graph, encode sensory events      |
-| `evaluate.py`     | Run benchmarks and ablations                       |
-| `visualize.py`    | Plot the memory graph for inspection               |
-| `test_cases.json` | 500+ query context pairs for recall evaluation     |
-| `notebooks/demo.ipynb` | Walkthrough with visual examples              |
-| `requirements.txt`| Dependency list for Python environment setup       |
+---
 
-## Why It Matters
+## 📂 Repository Structure
 
-- Memory isn’t flat. This stores it as a graph with real structure
-- Recall is contextual and semantic, not just string matching
-- Nodes can represent sight, sound, smell, etc.
-- Edges track time, co-occurrence, causality, and more
-- Inspired by actual neuroscience, not just prompt hacks
+```plaintext
+📦 neural-graph-memory/
+├── architecture/        # Core model definition (node, edge, graph classes)
+├── encoders/            # Vision and language encoders (CLIP, BERT, etc.)
+├── retriever/           # Associative retrieval and traversal engine
+├── experiments/         # Evaluation scripts and benchmark configs
+├── utils/               # Helper functions, logging, visualization
+├── notebooks/           # Walkthrough examples (coming soon)
+├── requirements.txt
+└── README.md
+```
 
-## Benchmarks
+---
 
-| Metric    | Score   |
-|-----------|---------|
-| Accuracy  | 89.4%   |
-| Precision | 87.8%   |
-| Recall    | 90.3%   |
+## Citation
 
-Performance is consistent and holds up under ablation.
+If you find this work useful, please cite:
 
-## Paper
+```bibtex
+@article{fisher2025ngm,
+  title={Neural Graph Memory: A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems},
+  author={Matthew Fisher},
+  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  year={2025}
+}
+```
 
-This repo supports the preprint:
+---
 
-**“Toward Human-Like Memory in AI: A Bio Inspired Graph Architecture for Multimodal Reasoning”**  
-Matt Fisher, 2024
+## Contributing
 
-## Future Work
+Contributions are welcome! Please open an issue or PR.
 
-- Replace text based cues with actual sensory inputs (CLIP, Whisper, IoT)
-- Tie into agent systems for grounded long term memory
-- Add pruning, decay, and novelty based updates
+---
 
-## Contact
+## 📄 License
 
-Built by [Matt Fisher](https://www.linkedin.com/in/itsmefish/)  
-📧 Fish@itsmefish.com
-
-## License
-
-MIT License. Fork it, remix it, or use it to make your system a little smarter.
+MIT License. See [LICENSE](LICENSE) for details.
