@@ -4,9 +4,13 @@
 > Developed by [Matthew Fisher](mailto:matthew_fisher@brown.edu)  
 > 📄 [Read the Paper (arXiv)](https://arxiv.org/abs/XXXX.XXXXX) (coming soon)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/release/python-390/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo.ipynb)
+
 ---
 
-## Overview
+##  Overview
 
 **Neural Graph Memory (NGM)** is a structured memory architecture designed to extend long-term memory capabilities in AI agents. Inspired by hippocampal memory formation, NGM represents episodic events as dynamic, modality-aware graphs, enabling efficient retrieval, contextual reasoning, and temporal alignment across multimodal inputs.
 
@@ -19,7 +23,7 @@ NGM supports:
 
 ---
 
-## Key Features
+##  Key Features
 
 -  **Graph-based Memory** — Events encoded as graph nodes, linked by semantic, temporal, and contextual relationships.
 -  **Modality-Aware Encoding** — Inputs from multiple modalities (e.g., language, vision) embedded into unified latent space.
@@ -68,13 +72,14 @@ Output logs and visualizations will be saved to `/results`.
 ├── experiments/         # Evaluation scripts and benchmark configs
 ├── utils/               # Helper functions, logging, visualization
 ├── notebooks/           # Walkthrough examples (coming soon)
+│   └── NGM_Demo.ipynb   # [Colab] Demo notebook
 ├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## Citation
+## 📘 Citation
 
 If you find this work useful, please cite:
 
@@ -89,7 +94,7 @@ If you find this work useful, please cite:
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please open an issue or PR.
 
