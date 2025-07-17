@@ -28,9 +28,8 @@ pip install -r requirements.txt
 
 Try out the core components interactively:
 
-- [Basic Architecture Walkthrough](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo_Complete.ipynb)
-- [Multimodal Episodic Memory Demo](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo_Multimodal_Expanded.ipynb)  
-  [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo_Multimodal_Expanded.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/NGM_Demo__.ipynb)
+
 
 ---
 
