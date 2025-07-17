@@ -1,7 +1,5 @@
-torch
-torchvision
-matplotlib
-pillow
-networkx
-sentence-transformers
+torch>=2.0.0
 transformers
+Pillow
+scikit-learn
+matplotlib
