@@ -1,4 +1,0 @@
-networkx
-numpy
-matplotlib
-sentence-transformers
