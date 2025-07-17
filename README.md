@@ -10,7 +10,6 @@ A biologically inspired graph-structured memory architecture for long-term multi
 
 Neural Graph Memory (NGM) enables structured memory storage and retrieval using node-based representations, associative links, and multimodal embeddings. Designed for agents that operate in complex environments, NGM supports episodic recall, long-range reasoning, and retrieval across time, space, and modality.
 
----
 
 ## Quick Start
 
@@ -22,16 +21,12 @@ cd neural-graph-memory
 pip install -r requirements.txt
 ```
 
----
-
 ## Colab Demo Notebooks
 
 Try out the core components interactively:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/NGM_Demo__.ipynb)
 
-
----
 
 ## Multimodal Memory Demonstrations
 
@@ -44,7 +39,6 @@ This notebook simulates how an AI agent encodes, stores, and retrieves memories 
 - **Image + Timestamp + Context** – Episodic memory with temporal context  
 - **Diagram + Interpretation** – Technical memory with meaning and structure
 
----
 
 ## Paper
 
@@ -54,7 +48,6 @@ Matthew Fisher, 2025
  [Read the Paper (arXiv preprint)](https://arxiv.org/abs/placeholder)  
 Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
 
----
 
 ## Directory Structure
 
@@ -71,8 +64,6 @@ Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
 ├── references_ngm.bib
 ```
 
----
-
 ## Citation
 
 ```bibtex
@@ -83,8 +74,6 @@ Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
   year={2025}
 }
 ```
-
----
 
 ## License
 
