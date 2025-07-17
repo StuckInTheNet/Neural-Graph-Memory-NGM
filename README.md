@@ -21,6 +21,18 @@ cd neural-graph-memory
 pip install -r requirements.txt
 ```
 
+## Example Usage
+
+# Run the demo in Colab
+[Open in Colab badge here]
+
+# Or run locally
+git clone https://github.com/StuckInTheNet/neural-graph-memory-Work-In-Progress-.git
+cd neural-graph-memory-Work-In-Progress-
+pip install -r requirements.txt
+jupyter notebook NGM_Demo__.ipynb
+
+
 ## Colab Demo Notebooks
 
 Try out the core components interactively:
