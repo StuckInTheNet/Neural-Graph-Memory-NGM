@@ -12,7 +12,7 @@ Neural Graph Memory (NGM) enables structured memory storage and retrieval using 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 Clone the repository and install dependencies:
 
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ---
 
-## 📓 Colab Demo Notebooks
+## Colab Demo Notebooks
 
 Try out the core components interactively:
 
@@ -34,30 +34,30 @@ Try out the core components interactively:
 
 ---
 
-## 🧠 Multimodal Memory Demonstrations
+## Multimodal Memory Demonstrations
 
 This notebook simulates how an AI agent encodes, stores, and retrieves memories across multiple modalities using Neural Graph Memory.
 
 ### Examples Included
 
-- 🐕 **Image + Caption** – Visual memory with annotation  
-- 🎙️ **Text + Audio** – Simulated voice note transcription  
-- 🌆 **Image + Timestamp + Context** – Episodic memory with temporal context  
-- 📊 **Diagram + Interpretation** – Technical memory with meaning and structure
+- **Image + Caption** – Visual memory with annotation  
+- **Text + Audio** – Simulated voice note transcription  
+- **Image + Timestamp + Context** – Episodic memory with temporal context  
+- **Diagram + Interpretation** – Technical memory with meaning and structure
 
 ---
 
-## 📎 Paper
+## Paper
 
 Neural Graph Memory: A Biologically Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems  
 Matthew Fisher, 2025
 
-📄 [Read the Paper (arXiv preprint)](https://arxiv.org/abs/placeholder)  
-📦 Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
+ [Read the Paper (arXiv preprint)](https://arxiv.org/abs/placeholder)  
+Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 .
@@ -74,7 +74,7 @@ Matthew Fisher, 2025
 
 ---
 
-## 🔍 Citation
+## Citation
 
 ```bibtex
 @article{fisher2025neuralgraphmemory,
@@ -87,6 +87,6 @@ Matthew Fisher, 2025
 
 ---
 
-## 🧬 License
+## License
 
 MIT License. See `LICENSE` file for details.
