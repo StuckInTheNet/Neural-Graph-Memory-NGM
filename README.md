@@ -33,9 +33,24 @@ pip install -r requirements.txt
 jupyter notebook NGM_Demo__.ipynb
 
 
-## Multimodal Memory Demonstrations
+# Synthetic Graph Nodes
 
-This notebook simulates how an AI agent encodes, stores, and retrieves memories across multiple modalities using Neural Graph Memory.
+Here's a synthetic dataset of memory graph nodes, generated for use in the NGM experiments. These nodes simulate multimodal entries (image, text, audio, event) along with example queries and annotations.
+
+## Files
+
+- `toy_graph.json`: Core graph node and edge data used to simulate memory storage structure.
+- `synthetic_queries.json`: Sample user queries for retrieval tasks across memory nodes.
+- `annotations.json`: Ground truth labels or expected responses used for evaluation and benchmarking.
+
+## Format
+
+All files are in JSON format and can be loaded with `load_data.py` using:
+
+```python
+from src.load_data import load_graph_data
+data = load_graph_data("data/")
+
 
 ### Examples Included
 
