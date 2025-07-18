@@ -76,24 +76,11 @@ Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
 ├── references_ngm.bib
 ```
 
-## Citation
-
-```bibtex
-@article{fisher2025neuralgraphmemory,
-  title={Neural Graph Memory: A Biologically Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems},
-  author={Fisher, Matthew},
-  journal={arXiv preprint arXiv:PLACEHOLDER},
-  year={2025}
-}
-```
-
 ## License
 
 MIT License. See `LICENSE` file for details.
 
 ## Citation
-
-## 📖 Citation
 
 If you use this code or refer to *Neural Graph Memory* in your work, please cite:
 
