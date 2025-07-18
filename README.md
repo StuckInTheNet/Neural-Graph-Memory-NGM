@@ -24,20 +24,13 @@ pip install -r requirements.txt
 ## Example Usage
 
 Run the demo in Colab
-[Open in Colab badge here]
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/NGM_Demo__.ipynb)
 
 Or run locally
 git clone https://github.com/StuckInTheNet/neural-graph-memory-Work-In-Progress-.git
 cd neural-graph-memory-Work-In-Progress-
 pip install -r requirements.txt
 jupyter notebook NGM_Demo__.ipynb
-
-
-## Colab Demo Notebooks
-
-Try out the core components interactively:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/NGM_Demo__.ipynb)
 
 
 ## Multimodal Memory Demonstrations
