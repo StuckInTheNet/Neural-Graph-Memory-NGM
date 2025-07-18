@@ -21,7 +21,7 @@ NGM introduces a biologically-motivated memory system:
 ```bash
 neural-graph-memory/
 ├── notebooks/
-│   └── NGM_Demo__.ipynb            # Colab demo notebook
+│   └── NGM_Demo.ipynb              # Colab demo notebook
 ├── src/
 │   ├── memory.py                   # Core graph memory logic
 │   └── load_data.py                # Utility for loading synthetic memory data
@@ -29,12 +29,21 @@ neural-graph-memory/
 │   ├── toy_graph.json
 │   ├── synthetic_queries.json
 │   └── annotations.json
+│   └── Synthetic_Graph_Nodes.csv
 ├── assets/                         # Sample images and diagrams
+├── paper/
+│   ├── Neural Graph Memory (NGM) -A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems 
+│   ├── Images
+│   └── nodes.png
+│   └── architecture.png
+│   ├── references.md      
 ├── scripts/
 │   └── benchmark_ngm.py            # Benchmarking logic
 ├── LICENSE
 ├── README.md
-└── references_ngm.bib             # LaTeX-compatible reference file
+├── requirements.txt
+├── .gitignore
+├── .gitattributes
 ```
 
 ## Getting Started
