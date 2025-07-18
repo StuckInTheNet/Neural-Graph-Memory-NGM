@@ -33,7 +33,7 @@ neural-graph-memory/
 ├── assets/                         # Sample images and diagrams
 │   └── architecture.png
 │   └── audio_sim_text.png
-│   └──city_context.jpg
+│   └── city_context.jpg
 │   └── diagram_analysis.png
 │   └── dog_caption_jpg
 │   └── tech_diagram.jpg
