@@ -1,0 +1,10 @@
+[
+  {
+    "query": "What did I see in Central Park?",
+    "expected": "60cfddf0-ea7a-4377-b7f9-deac3f0d3eb6"
+  },
+  {
+    "query": "What was the reminder about after the meeting?",
+    "expected": "9215ad3b-34b9-45d3-9bc5-16be3d0865a1"
+  }
+]
