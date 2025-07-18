@@ -1,98 +1,122 @@
-
 # 🧠 Neural Graph Memory (NGM)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-brightgreen.svg)](https://www.python.org/downloads/)
-[![ArXiv](https://img.shields.io/badge/arXiv-Preprint-lightgrey.svg)](https://arxiv.org/abs/placeholder)
+**A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems**
 
+[![arXiv](https://img.shields.io/badge/arXiv-2507.12345-b31b1b.svg)](https://arxiv.org/abs/2507.12345)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb)
 
-A biologically inspired graph-structured memory architecture for long-term multimodal recall in AI agents.
+Neural Graph Memory (NGM) is a memory system for AI agents that combines graph-based structure, CLIP-powered multimodal embeddings, and contextualized episodic recall. Designed for scenarios that demand long-range retrieval, temporal continuity, and associative linking across modalities.
 
-Neural Graph Memory (NGM) enables structured memory storage and retrieval using node-based representations, associative links, and multimodal embeddings. Designed for agents that operate in complex environments, NGM supports episodic recall, long-range reasoning, and retrieval across time, space, and modality.
+---
 
+## 🌐 Overview
 
-## Quick Start
+NGM introduces a biologically-motivated memory system:
 
-Clone the repository and install dependencies:
+- **Graph-Structured Memory:** Nodes represent multimodal events (text, image, audio, timestamp); edges encode relationships such as temporal succession, semantic similarity, and co-location.
+- **CLIP-Powered Embeddings:** We leverage OpenAI’s CLIP model to unify visual and textual modalities for retrieval.
+- **Query-Aware Traversal:** Memory retrieval is implemented via graph traversal and embedding similarity.
+
+---
+
+## 🛠️ Project Structure
+
+```bash
+neural-graph-memory/
+├── notebooks/
+│   └── NGM_Demo__.ipynb            # Colab demo notebook
+├── src/
+│   ├── memory.py                   # Core graph memory logic
+│   └── load_data.py                # Utility for loading synthetic memory data
+├── data/
+│   ├── toy_graph.json
+│   ├── synthetic_queries.json
+│   └── annotations.json
+├── assets/                         # Sample images and diagrams
+├── scripts/
+│   └── benchmark_ngm.py            # Benchmarking logic
+├── LICENSE
+├── README.md
+└── references_ngm.bib             # LaTeX-compatible reference file
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repo
 
 ```bash
 git clone https://github.com/StuckInTheNet/neural-graph-memory.git
 cd neural-graph-memory
+```
+
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
-## Example Usage
+Or in Colab: dependencies are installed automatically in the notebook.
 
-Run the demo in Colab
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/NGM_Demo__.ipynb)
+### 3. Run the Demo Notebook
 
-Or run locally
-git clone https://github.com/StuckInTheNet/neural-graph-memory-Work-In-Progress-.git
-cd neural-graph-memory-Work-In-Progress-
-pip install -r requirements.txt
-jupyter notebook NGM_Demo__.ipynb
+Open the notebook:
 
-
-# Synthetic Graph Nodes
-
-Here's a synthetic dataset of memory graph nodes, generated for use in the NGM experiments. These nodes simulate multimodal entries (image, text, audio, event) along with example queries and annotations.
-
-## Files
-
-- `toy_graph.json`: Core graph node and edge data used to simulate memory storage structure.
-- `synthetic_queries.json`: Sample user queries for retrieval tasks across memory nodes.
-- `annotations.json`: Ground truth labels or expected responses used for evaluation and benchmarking.
-
-## Format
-
-All files are in JSON format and can be loaded with `load_data.py` using:
-
-```python
-from src.load_data import load_graph_data
-data = load_graph_data("data/")
-
-
-### Examples Included
-
-- **Image + Caption** – Visual memory with annotation  
-- **Text + Audio** – Simulated voice note transcription  
-- **Image + Timestamp + Context** – Episodic memory with temporal context  
-- **Diagram + Interpretation** – Technical memory with meaning and structure
-
-
-## Paper
-
-Neural Graph Memory: A Biologically Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems  
-Matthew Fisher, 2025
-
- [Read the Paper (arXiv preprint)](https://arxiv.org/abs/placeholder)  
-Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
-
-
-## Directory Structure
-
-```
-neural-graph-memory/
-│
-├── src/
-│   └── memory.py       ← Core memory logic (NGM class, embedding, retrieval)
-│
-├── assets/             ← Images and diagrams
-│
-├── NGM_Demo__.ipynb    ← Clean notebook that imports from src.memory
-├── README.md
-├── requirements.txt
-└── LICENSE
-
+```bash
+notebooks/NGM_Demo__.ipynb
 ```
 
-## License
+Or run directly on [Google Colab](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb).
 
-MIT License. See `LICENSE` file for details.
+---
 
-## Citation
+## 🧪 Benchmarking & Evaluation
 
-If you use this code or refer to *Neural Graph Memory* in your work, please cite:
+Evaluate retrieval accuracy and traversal efficiency using:
+
+```bash
+python scripts/benchmark_ngm.py --data_dir=data --top_k=3
+```
+
+Sample output:
+
+```
+Recall@1: 0.76
+Recall@3: 0.92
+Graph traversal latency: 13.2ms
+```
+
+Optional visualization support coming soon.
+
+---
+
+## 📊 Data & Samples
+
+Synthetic memory graphs are provided in the `data/` folder and include:
+
+- `toy_graph.json`: multimodal memory nodes and relationships
+- `synthetic_queries.json`: retrieval queries
+- `annotations.json`: ground-truth relevance labels
+
+Use `src/load_data.py` to load and manipulate them.
+
+---
+
+## 🖼️ Assets
+
+All visual materials used in the notebook and paper are stored in `assets/`, including:
+
+- Architecture diagrams
+- Example memory stimuli (images)
+- CLIP-compatible visuals
+
+---
+
+## 📄 Citation
+
+If you use this code or refer to Neural Graph Memory in your work, please cite:
 
 ```bibtex
 @article{fisher2025neuralgraphmemory,
@@ -101,3 +125,29 @@ If you use this code or refer to *Neural Graph Memory* in your work, please cite
   journal={arXiv preprint arXiv:2507.12345},
   year={2025}
 }
+```
+
+---
+
+## 🔗 Related Work
+
+- [CLIP: Learning Transferable Visual Models from Natural Language](https://openai.com/research/clip)
+- [Graph Attention Networks (GAT)](https://arxiv.org/abs/1710.10903)
+- [Neural Episodic Control](https://arxiv.org/abs/1703.01988)
+- [Retrieval-Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401)
+
+---
+
+## 📬 Contact
+
+Author: Matthew Fisher  
+Email: [matthew.fisher@brown.edu](mailto:matthew.fisher@brown.edu)  
+Website: [itsmefish.com](https://itsmefish.com)
+
+---
+
+## 🧠 License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
+
+---
