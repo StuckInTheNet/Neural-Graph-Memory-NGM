@@ -31,6 +31,13 @@ neural-graph-memory/
 │   └── annotations.json
 │   └── Synthetic_Graph_Nodes.csv
 ├── assets/                         # Sample images and diagrams
+│   └── architecture.png
+│   └── audio_sim_text.png
+│   └──city_context.jpg
+│   └── diagram_analysis.png
+│   └── dog_caption_jpg
+│   └── tech_diagram.jpg
+│   └── voice.jpg
 ├── paper/
 │   ├── Neural Graph Memory (NGM) -A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems 
 │   ├── Images
