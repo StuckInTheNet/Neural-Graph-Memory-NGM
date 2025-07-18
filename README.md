@@ -1,4 +1,4 @@
-# 🧠 Neural Graph Memory (NGM)
+# Neural Graph Memory (NGM)
 
 **A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems**
 
@@ -8,9 +8,7 @@
 
 Neural Graph Memory (NGM) is a memory system for AI agents that combines graph-based structure, CLIP-powered multimodal embeddings, and contextualized episodic recall. Designed for scenarios that demand long-range retrieval, temporal continuity, and associative linking across modalities.
 
----
-
-## 🌐 Overview
+## Overview
 
 NGM introduces a biologically-motivated memory system:
 
@@ -18,9 +16,7 @@ NGM introduces a biologically-motivated memory system:
 - **CLIP-Powered Embeddings:** We leverage OpenAI’s CLIP model to unify visual and textual modalities for retrieval.
 - **Query-Aware Traversal:** Memory retrieval is implemented via graph traversal and embedding similarity.
 
----
-
-## 🛠️ Project Structure
+##  Project Structure
 
 ```bash
 neural-graph-memory/
@@ -41,9 +37,7 @@ neural-graph-memory/
 └── references_ngm.bib             # LaTeX-compatible reference file
 ```
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the Repo
 
@@ -70,9 +64,7 @@ notebooks/NGM_Demo__.ipynb
 
 Or run directly on [Google Colab](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb).
 
----
-
-## 🧪 Benchmarking & Evaluation
+##  Benchmarking & Evaluation
 
 Evaluate retrieval accuracy and traversal efficiency using:
 
@@ -90,9 +82,7 @@ Graph traversal latency: 13.2ms
 
 Optional visualization support coming soon.
 
----
-
-## 📊 Data & Samples
+## Data & Samples
 
 Synthetic memory graphs are provided in the `data/` folder and include:
 
@@ -102,9 +92,7 @@ Synthetic memory graphs are provided in the `data/` folder and include:
 
 Use `src/load_data.py` to load and manipulate them.
 
----
-
-## 🖼️ Assets
+## Assets
 
 All visual materials used in the notebook and paper are stored in `assets/`, including:
 
@@ -112,9 +100,7 @@ All visual materials used in the notebook and paper are stored in `assets/`, inc
 - Example memory stimuli (images)
 - CLIP-compatible visuals
 
----
-
-## 📄 Citation
+## Citation
 
 If you use this code or refer to Neural Graph Memory in your work, please cite:
 
@@ -127,27 +113,19 @@ If you use this code or refer to Neural Graph Memory in your work, please cite:
 }
 ```
 
----
-
-## 🔗 Related Work
+##  Related Work
 
 - [CLIP: Learning Transferable Visual Models from Natural Language](https://openai.com/research/clip)
 - [Graph Attention Networks (GAT)](https://arxiv.org/abs/1710.10903)
 - [Neural Episodic Control](https://arxiv.org/abs/1703.01988)
 - [Retrieval-Augmented Generation (RAG)](https://arxiv.org/abs/2005.11401)
 
----
-
-## 📬 Contact
+##  Contact
 
 Author: Matthew Fisher  
 Email: [matthew.fisher@brown.edu](mailto:matthew.fisher@brown.edu)  
 Website: [itsmefish.com](https://itsmefish.com)
 
----
-
-## 🧠 License
+## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
----
