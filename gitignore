@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files and logs
+*.log
+*.csv
+*.tsv
+*.hdf5
+*.npz
+*.pkl
+*.ckpt
+
+# Model outputs or large generated data
+*.pt
+*.pth
+*.onnx
+
+# Colab / Google Drive sync files
+*.ipynb~ 
+*.nbconvert.ipynb
+*.bak.ipynb
+.DS_Store
+
+# VSCode and IDE settings
+.vscode/
+.idea/
+
+# Ignore any token/API secrets if accidentally placed
+.env
+.env.*
+token.json
+credentials.json
+
+# Output folders
+outputs/
+runs/
