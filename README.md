@@ -57,16 +57,18 @@ Included in this repo: `ngm_arxiv_final_pristine.tex` and `references_ngm.bib`
 ## Directory Structure
 
 ```
-.
-├── notebooks/
-│   ├── NGM_Demo_Complete.ipynb
-│   └── NGM_Demo_Multimodal_Expanded.ipynb
+neural-graph-memory/
+│
 ├── src/
-│   └── core.py
-├── assets/
-│   └── architecture.png
-├── ngm_arxiv_final_pristine.tex
-├── references_ngm.bib
+│   └── memory.py       ← Core memory logic (NGM class, embedding, retrieval)
+│
+├── assets/             ← Images and diagrams
+│
+├── NGM_Demo__.ipynb    ← Clean notebook that imports from src.memory
+├── README.md
+├── requirements.txt
+└── LICENSE
+
 ```
 
 ## License
