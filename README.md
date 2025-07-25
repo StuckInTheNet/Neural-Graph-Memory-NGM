@@ -19,38 +19,35 @@ NGM introduces a biologically-motivated memory system:
 ##  Project Structure
 
 ```bash
-neural-graph-memory/
-├── notebooks/
-│   └── NGM_Demo.ipynb              # Colab demo notebook
-├── src/
-│   ├── memory.py                   # Core graph memory logic
-│   └── load_data.py                # Utility for loading synthetic memory data
-├── data/
-│   ├── toy_graph.json
-│   ├── synthetic_queries.json
-│   └── annotations.json
-│   └── Synthetic_Graph_Nodes.csv
-├── assets/                         # Sample images and diagrams
-│   └── architecture.png
-│   └── audio_sim_text.png
-│   └── city_context.jpg
-│   └── diagram_analysis.png
-│   └── dog_caption_jpg
-│   └── tech_diagram.jpg
-│   └── voice.jpg
-├── paper/
-│   ├── Neural Graph Memory (NGM) -A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems 
-│   ├── Images
-│   └── nodes.png
-│   └── architecture.png
-│   ├── references.md      
-├── scripts/
-│   └── benchmark_ngm.py            # Benchmarking logic
-├── LICENSE
-├── README.md
-├── requirements.txt
-├── .gitignore
-├── .gitattributes
+Neural-Graph-Memory-NGM/
+├── LICENSE # License file (MIT)
+├── README.md # Project overview and usage instructions
+├── SRC/ # Core source code
+│ ├── load_data.py # Data loading and parsing utilities
+│ └── memory.py # Neural Graph Memory implementation
+├── assets/ # Multimodal sample inputs
+│ ├── architecture.png
+│ ├── audio_sim_text.png
+│ ├── city_context.jpg
+│ ├── diagram_analysis.png
+│ ├── dog_caption.jpg
+│ ├── tech_diagram.jpg
+│ └── voice.jpg
+├── data/ # Synthetic benchmark datasets
+│ ├── Synthetic_Graph_Nodes.csv
+│ ├── annotations.json
+│ ├── synthetic_queries.json
+│ └── toy_graph.json
+├── notebooks/ # Interactive Colab notebooks
+│ └── NGM_Demo.ipynb # Demo of NGM memory encoding & retrieval
+├── paper/ # Published research paper and references
+│ ├── Neural_Graph_Memory_A_Biologically_Inspired_Graph_Architecture_for_Multimodal_Episodic_Recall_in_AI_Systems.pdf
+│ ├── Neural_Graph_Memory__A_Biologically_Inspired_Graph_Architecture_for_Multimodal_Episodic_Recall_in_AI_Systems_.pdf
+│ ├── images/
+│ └── references.md
+├── scripts/ # Utility scripts
+│ └── benchmark_ngm.py # Performance benchmarking script
+└── requirements.txt # Python dependencies
 ```
 
 ## Getting Started
@@ -140,8 +137,7 @@ If you use this code or refer to Neural Graph Memory in your work, please cite:
 ##  Contact
 
 Author: Matthew Fisher  
-Email: [matthew.fisher@brown.edu](mailto:matthew.fisher@brown.edu)  
-Website: [itsmefish.com](https://itsmefish.com)
+Email: [matthew_fisher@brown.edu](mailto:matthew_fisher@brown.edu)  
 
 ## License
 
