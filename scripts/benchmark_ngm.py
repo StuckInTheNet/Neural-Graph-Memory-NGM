@@ -1,56 +1,60 @@
-# scripts/benchmark_ngm.py
-
-import time
 import os
 import sys
+import time
+import json
 
-# Adjust the path for importing modules
+# Allow imports from src/
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
 
 from load_data import load_graph_data
 from memory import NeuralGraphMemory
 
-def run_benchmark():
-    print("🔍 Loading synthetic data...")
-    data = load_graph_data('data')
+def main():
+    # Load data
+    data_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+    data = load_graph_data(data_dir)
+
     nodes = data['nodes']
     edges = data['edges']
     queries = data['queries']
     annotations = data['annotations']
 
-    print("🧠 Initializing Neural Graph Memory...")
+    # Initialize memory
     ngm = NeuralGraphMemory()
-    
-    start_time = time.time()
-    ngm.build_graph(nodes, edges)
-    graph_build_time = time.time() - start_time
-    print(f"✅ Graph build time: {graph_build_time:.4f} seconds")
+    ngm.add_nodes(nodes)
+    ngm.add_edges(edges)
 
-    print("🔎 Running retrieval benchmark...")
-    retrieval_times = []
+    print(f"[INFO] Loaded {len(nodes)} nodes, {len(edges)} edges, and {len(queries)} queries.")
+
+    # Run benchmark
+    total_time = 0.0
+    correct = 0
     results = []
 
-    for q in queries:
+    for i, query in enumerate(queries):
         start = time.time()
-        retrieved = ngm.retrieve(q['query'])
+        answer = ngm.query(query['input'])
         duration = time.time() - start
-        retrieval_times.append(duration)
+        total_time += duration
 
-        results.append({
-            "query": q['query'],
-            "retrieved": retrieved,
-            "expected": annotations.get(q['query'], 'N/A')
-        })
+        # Get ground truth annotation
+        expected = annotations[i]['expected']
+        is_correct = expected.lower() in answer.lower()
+        results.append((query['input'], answer, expected, is_correct))
 
-    avg_retrieval_time = sum(retrieval_times) / len(retrieval_times)
-    print(f"⏱ Average retrieval time per query: {avg_retrieval_time:.4f} seconds")
+        if is_correct:
+            correct += 1
 
-    print("\n📋 Sample Benchmark Results:")
-    for r in results[:5]:  # Show top 5
-        print(f"- Query: {r['query']}")
-        print(f"  Retrieved: {r['retrieved']}")
-        print(f"  Expected: {r['expected']}")
-        print("")
+    # Report
+    print("\n[RESULTS]")
+    for q, a, e, ok in results:
+        status = "✓" if ok else "✗"
+        print(f"{status} Q: {q}\n   A: {a}\n   Expected: {e}\n")
+
+    print(f"Total queries: {len(queries)}")
+    print(f"Correct answers: {correct}")
+    print(f"Accuracy: {correct / len(queries) * 100:.2f}%")
+    print(f"Avg retrieval time: {total_time / len(queries):.4f} sec")
 
 if __name__ == "__main__":
-    run_benchmark()
+    main()
