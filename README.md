@@ -78,7 +78,8 @@ Open the notebook:
 notebooks/NGM_Demo__.ipynb
 ```
 
-Or run directly on [Google Colab](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb).
+Or run directly on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/notebooks/NGM_Demo.ipynb)
+.
 
 ##  Benchmarking & Evaluation
 
