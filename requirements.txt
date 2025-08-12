@@ -1,0 +1,9 @@
+torch>=2.0.0
+transformers
+Pillow
+scikit-learn
+matplotlib
+networkx
+requests
+sentence-transformers
+numpy

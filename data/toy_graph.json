@@ -1,0 +1,56 @@
+{
+  "nodes": [
+    {
+      "id": "05bb1723-ab44-49df-926f-4d9948d3ff64",
+      "type": "image",
+      "description": "Photo taken at Times Square",
+      "timestamp": "2025-07-18T00:09:20.290896"
+    },
+    {
+      "id": "988b7f88-e896-4076-b186-0e99abe8192b",
+      "type": "event",
+      "description": "Golden retriever playing fetch",
+      "timestamp": "2025-07-18T00:09:20.291074"
+    },
+    {
+      "id": "834b3e09-cc5d-4007-8f39-b82cbd8c4168",
+      "type": "diagram",
+      "description": "Diagram of neural graph memory",
+      "timestamp": "2025-07-18T00:09:20.291164"
+    },
+    {
+      "id": "9215ad3b-34b9-45d3-9bc5-16be3d0865a1",
+      "type": "audio",
+      "description": "Voice note reminding to review architecture notes",
+      "timestamp": "2025-07-18T00:09:20.291508"
+    },
+    {
+      "id": "60cfddf0-ea7a-4377-b7f9-deac3f0d3eb6",
+      "type": "text",
+      "description": "Note from Central Park walk about seeing people and dogs",
+      "timestamp": "2025-07-18T00:09:20.292074"
+    }
+  ],
+  "edges": [
+    {
+      "source": "05bb1723-ab44-49df-926f-4d9948d3ff64",
+      "target": "988b7f88-e896-4076-b186-0e99abe8192b"
+    },
+    {
+      "source": "988b7f88-e896-4076-b186-0e99abe8192b",
+      "target": "834b3e09-cc5d-4007-8f39-b82cbd8c4168"
+    },
+    {
+      "source": "834b3e09-cc5d-4007-8f39-b82cbd8c4168",
+      "target": "9215ad3b-34b9-45d3-9bc5-16be3d0865a1"
+    },
+    {
+      "source": "9215ad3b-34b9-45d3-9bc5-16be3d0865a1",
+      "target": "60cfddf0-ea7a-4377-b7f9-deac3f0d3eb6"
+    },
+    {
+      "source": "60cfddf0-ea7a-4377-b7f9-deac3f0d3eb6",
+      "target": "05bb1723-ab44-49df-926f-4d9948d3ff64"
+    }
+  ]
+}

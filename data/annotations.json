@@ -1,0 +1,10 @@
+[
+  {
+    "query": "What did I see in Central Park?",
+    "expected": "Note from Central Park walk about seeing people and dogs"
+  },
+  {
+    "query": "What was the reminder about after the meeting?",
+    "expected": "Voice note reminding to review architecture notes"
+  }
+]

@@ -1,0 +1,12 @@
+# Treat notebooks as text for better diffing
+*.ipynb text
+
+# Ensure consistent LF line endings
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.ipynb text eol=lf
+
+# Linguist overrides for GitHub repo language stats
+*.ipynb linguist-language=Jupyter Notebook
+*.py linguist-language=Python
