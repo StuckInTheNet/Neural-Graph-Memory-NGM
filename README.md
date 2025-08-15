@@ -3,7 +3,7 @@
 **A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems**
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/Neural-Graph-Memory-NGM/blob/main/notebooks/NGM_Demo.ipynb)
 
 Neural Graph Memory (NGM) is a memory system for AI agents that combines graph-based structure, CLIP-powered multimodal embeddings, and contextualized episodic recall. Designed for scenarios that demand long-range retrieval, temporal continuity, and associative linking across modalities.
 
@@ -54,8 +54,8 @@ Neural-Graph-Memory-NGM/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/StuckInTheNet/neural-graph-memory.git
-cd neural-graph-memory
+git clone https://github.com/StuckInTheNet/Neural-Graph-Memory-NGM.git
+cd Neural-Graph-Memory-NGM
 ```
 
 ### 2. Install Dependencies
@@ -71,10 +71,10 @@ Or in Colab: dependencies are installed automatically in the notebook.
 Open the notebook:
 
 ```bash
-notebooks/NGM_Demo__.ipynb
+notebooks/NGM_Demo.ipynb
 ```
 
-Or run directly on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory-Work-In-Progress-/blob/main/notebooks/NGM_Demo.ipynb)
+Or run directly on [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/Neural-Graph-Memory-NGM/blob/main/notebooks/NGM_Demo.ipynb)
 .
 
 ##  Benchmarking & Evaluation
