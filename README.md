@@ -2,7 +2,6 @@
 
 **A Biologically-Inspired Graph Architecture for Multimodal Episodic Recall in AI Systems**
 
-[![arXiv](https://img.shields.io/badge/arXiv-2507.12345-b31b1b.svg)](https://arxiv.org/abs/2507.12345)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/StuckInTheNet/neural-graph-memory/blob/main/notebooks/NGM_Demo__.ipynb)
 
